@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from "react";
-import { motion } from 'framer-motion';
 
 import logo from "../public/assets/VA_logo.svg"
 
@@ -20,15 +19,21 @@ const Navbar = () => {
           <button className="bg-light-purple w-[110px] h-[40px] rounded-md">Resume</button>
         </div>
       </nav>
-      <nav className="bg-purple fixed top-0 flex pt-[18px] text-white1 font-semibold text-base w-full xl:hidden z-10 ">
+      <nav
+        className="bg-purple fixed top-0 flex pt-[18px] text-white1 font-semibold text-base w-full xl:hidden z-10">
         <div className="z-20 flex justify-between items-center w-full border-b-light-purple border-b-2 px-8">
           <a onClick={() => setIsOpen(false)} href="#home"><Image className="cursor-pointer" src={logo} alt="vladimir aleksic logo" width={70} height={70} /></a>
           <div>
-            <button className="text-3xl" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}</button>
+            <button
+              className="text-3xl"
+              onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+            </button>
           </div>
         </div>
         {isOpen &&
-          <div className="bg-purple absolute flex flex-col top-0 left-0 h-screen justify-center px-8 w-full items-center text-3xl">
+          <div
+            className="bg-purple absolute flex flex-col top-0 left-0 h-screen justify-center px-8 w-full items-center text-3xl">
             <a onClick={() => setIsOpen(false)} className="py-8" href="#about">About</a>
             <a onClick={() => setIsOpen(false)} className="py-8" href="#experience">Experience</a>
             <a onClick={() => setIsOpen(false)} className="py-8" href="#work">Work</a>
