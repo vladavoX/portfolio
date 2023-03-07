@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <motion.div
       initial={{ x: '10vw', opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ delay: 0.5, bounce: 0.5 }}
       className='fixed top-0 left-0 w-24 h-full bg-gray-800 text-gray-200 flex flex-col justify-between items-center py-10'
     >
