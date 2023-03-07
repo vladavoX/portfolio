@@ -9,16 +9,16 @@ const Landing = () => {
       className='flex flex-col gap-10'
     >
       <p className='text-gray-200 font-semibold text-2xl italic'>
-        <span className='text-green-500'>&lt;p&gt; </span>
+        <span className='text-green-800'>&lt;p&gt; </span>
         <br />
         <span className='uppercase not-italic'>
           &nbsp;&nbsp;vladimir aleksic / novi sad, serbia
         </span>
         <br />
-        <span className='text-green-500'>&lt;/p&gt;</span>
+        <span className='text-green-800'>&lt;/p&gt;</span>
       </p>
       <h1 className='font-bold text-2xl italic'>
-        <span className='text-green-500'>&lt;h1&gt;</span>
+        <span className='text-green-800'>&lt;h1&gt;</span>
         <br />
         <span className='text-8xl not-italic'>
           <span className='text-2xl'>&nbsp;&nbsp;</span>Welcome,
@@ -28,10 +28,10 @@ const Landing = () => {
           <span className='text-2xl'>&nbsp;&nbsp;</span>Frontend Web Developer
         </span>
         <br />
-        <span className='text-green-500'>&lt;/h1&gt;</span>
+        <span className='text-green-800'>&lt;/h1&gt;</span>
       </h1>
       <p className='text-gray-200 font-semibold text-2xl'>
-        <span className='text-green-500 italic'>&lt;p&gt;</span>
+        <span className='text-green-800 italic'>&lt;p&gt;</span>
         <br />
         &nbsp;&nbsp;
         <span className='uppercase not-italic'>
@@ -57,7 +57,7 @@ const Landing = () => {
           </a>
         </span>
         <br />
-        <span className='text-green-500 italic'>&lt;/p&gt;</span>
+        <span className='text-green-800 italic'>&lt;/p&gt;</span>
       </p>
     </motion.div>
   )
