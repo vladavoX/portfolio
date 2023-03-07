@@ -15,8 +15,8 @@ function App() {
   return (
     <div
       className={`bg-gray-900 text-gray-50 font-mono flex flex-col ${
-        spinner ? 'h-screen justify-center' : ''
-      } items-center`}
+        spinner ? 'h-screen justify-center items-center' : ''
+      } px-48`}
     >
       {spinner && (
         <div className='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-green-500'></div>
@@ -26,7 +26,6 @@ function App() {
           <Sidebar />
           <Landing />
           <About />
-          <Projects />
         </>
       )}
     </div>

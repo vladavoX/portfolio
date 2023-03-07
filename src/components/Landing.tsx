@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Links from './Links'
 
 const Landing = () => {
   return (
@@ -12,76 +13,32 @@ const Landing = () => {
         hidden: { opacity: 0, x: 100 },
         visible: { opacity: 1, x: 0 },
       }}
-      className='flex flex-col gap-10 h-screen justify-center'
+      className='flex flex-col gap-10 h-screen justify-center text-gray-200 font-semibold text-2xl italic'
     >
-      <p className='text-gray-200 font-semibold text-2xl italic'>
+      <div>
         <span className='text-green-800'>&lt;body&gt;</span>
         <br />
-        &nbsp;&nbsp;<span className='text-green-800'>&lt;section&gt;</span>
+        <span className='text-green-800 ml-4'>&lt;section&gt;</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800'>&lt;p&gt;</span>
-        <br />
-        <span className='uppercase not-italic'>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vladimir aleksic / novi sad,
-          serbia
-        </span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800'>&lt;/p&gt;</span>
-      </p>
-      <h1 className='font-bold text-2xl italic'>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800'>&lt;h1&gt;</span>
-        <br />
-        <span className='text-8xl not-italic'>
-          <span className='text-2xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className='text-green-800 ml-8'>&lt;p&gt;</span>
+        <p className='uppercase not-italic ml-12'>
+          vladimir aleksic / novi sad, serbia
+        </p>
+        <span className='text-green-800 ml-8'>&lt;/p&gt;</span>
+      </div>
+      <div>
+        <span className='text-green-800 ml-8'>&lt;h1&gt;</span>
+        <h1 className='font-bold text-8xl ml-12 not-italic text-gray-50'>
           Welcome,
           <br />
-          <span className='text-2xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           I'm Vladimir,
           <br />
-          <span className='text-2xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           Frontend Web Developer
-        </span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800'>&lt;/h1&gt;</span>
-      </h1>
-      <p className='text-gray-200 font-semibold text-2xl'>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800 italic'>&lt;p&gt;</span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='uppercase not-italic'>
-          <a
-            className='hover:text-green-600 duration-150'
-            href='#about'
-          >
-            about me
-          </a>{' '}
-          /{' '}
-          <a
-            className='hover:text-green-600 duration-150'
-            href='#projects'
-          >
-            projects
-          </a>{' '}
-          /{' '}
-          <a
-            className='hover:text-green-600 duration-150'
-            href='#contact'
-          >
-            contact
-          </a>
-        </span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='text-green-800 italic'>&lt;/p&gt;</span>
-        <br />
-        &nbsp;&nbsp;
-        <span className='text-green-800 italic'>&lt;/section&gt;</span>
-      </p>
+        </h1>
+        <span className='text-green-800 ml-8'>&lt;/h1&gt;</span>
+      </div>
+
+      <Links />
     </motion.section>
   )
 }
