@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div
-      className={`bg-gray-900 text-gray-50 font-mono flex flex-col ${
+      className={`bg-gradient-to-br from-gray-900 to-gray-800 text-gray-50 font-mono flex flex-col ${
         spinner ? 'h-screen justify-center items-center' : ''
       } px-48`}
     >

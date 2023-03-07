@@ -7,6 +7,13 @@ const Links = () => {
         <br />
         <a
           className='hover:text-green-600 duration-150 ml-8'
+          href='#home'
+        >
+          home
+        </a>{' '}
+        /{' '}
+        <a
+          className='hover:text-green-600 duration-150'
           href='#about'
         >
           about me
