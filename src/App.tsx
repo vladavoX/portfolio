@@ -11,11 +11,9 @@ function App() {
   }, 1000)
 
   return (
-    <div className='bg-gray-900 text-gray-50 font-mono'>
+    <div className='bg-gray-900 text-gray-50 font-mono flex items-center justify-center h-screen'>
       {spinner && (
-        <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center'>
-          <div className='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-green-500'></div>
-        </div>
+        <div className='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-green-500'></div>
       )}
       {!spinner && (
         <>
