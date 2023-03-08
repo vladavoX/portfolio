@@ -19,7 +19,9 @@ import {
 } from 'react-icons/gi'
 import { BsMusicNote, BsCodeSlash } from 'react-icons/bs'
 
-import Links from './Links'
+import Links from '../Links'
+import AboutHobbies from './AboutHobbies'
+import AboutTech from './AboutTech'
 
 const technologies = [
   {
@@ -145,55 +147,11 @@ const About = () => {
         <div className='flex flex-col gap-5 w-1/2 justify-center'>
           <div className='flex flex-col gap-5 border-l-2 border-gray-700 bg-gray-900 p-10 rounded-xl'>
             <p className='not-italic text-center'>Technologies</p>
-            <div className='grid grid-cols-4 gap-5 justify-items-center'>
-              {technologies.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  initial='hidden'
-                  whileInView='visible'
-                  viewport={{ once: false, amount: 'all' }}
-                  transition={{
-                    delay: 0.1 + index * 0.1,
-                    duration: 0.5,
-                    type: 'spring',
-                    bounce: 0.5,
-                  }}
-                  variants={{
-                    hidden: { opacity: 0, x: 100 },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  className='text-5xl'
-                >
-                  {tech.icon}
-                </motion.div>
-              ))}
-            </div>
+            <AboutTech technologies={technologies} />
           </div>
           <div className='flex flex-col gap-5 border-l-2 border-gray-700 bg-gray-900 p-10 rounded-xl'>
             <p className='not-italic text-center'>Hobbies & Interest</p>
-            <div className='grid grid-cols-3 gap-5 justify-items-center'>
-              {hobbies.map((hobby, index) => (
-                <motion.div
-                  key={index}
-                  initial='hidden'
-                  whileInView='visible'
-                  viewport={{ once: false, amount: 'all' }}
-                  transition={{
-                    delay: 0.1 + index * 0.1,
-                    duration: 0.5,
-                    type: 'spring',
-                    bounce: 0.5,
-                  }}
-                  variants={{
-                    hidden: { opacity: 0, x: 100 },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  className='text-5xl'
-                >
-                  {hobby.icon}
-                </motion.div>
-              ))}
-            </div>
+            <AboutHobbies hobbies={hobbies} />
           </div>
         </div>
       </div>

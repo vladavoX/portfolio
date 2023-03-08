@@ -29,12 +29,14 @@ const Landing = () => {
         </div>
         <div>
           <span className='text-green-800 ml-8'>&lt;h1&gt;</span>
-          <h1 className='font-bold text-7xl ml-12 not-italic text-gray-50'>
-            Welcome,
+          <h1 className='font-bold text-6xl ml-12 not-italic text-gray-50'>
+            Welcome!
             <br />
-            I'm Vladimir,
+            I am Vladimir,
             <br />
-            Frontend Web Developer
+            Frontend Web Developer,
+            <br />
+            Passionate about programming.
           </h1>
           <span className='text-green-800 ml-8'>&lt;/h1&gt;</span>
         </div>

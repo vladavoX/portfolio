@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import Landing from './components/Landing'
 import Sidebar from './components/Sidebar'
-import About from './components/About'
+import About from './components/About/About'
 import Projects from './components/Projects'
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           <Sidebar />
           <Landing />
           <About />
+          <Projects />
         </>
       )}
     </div>
