@@ -124,21 +124,17 @@ const About = () => {
             <p className='uppercase not-italic ml-12'>about me</p>
             <span className='text-green-800 ml-8'>&lt;/p&gt;</span>
           </div>
-          <div>
-            <span className='text-green-800 ml-8'>&lt;div&gt;</span>
-            <div className='ml-8 flex flex-col justify-center'>
-              <span className='text-green-800'>&lt;p&gt;</span>
-              <p className='ml-4 not-italic text-gray-50 text-justify whitespace-pre-line'>
-                Dedicated and driven Frontend Web Developer with a passion for
-                creating beautiful, innovative, user-friendly and functional web
-                applications. Currently finishing my studies as a Software
-                Engineer and eager to embark on my first full-time role as a
-                Frontend Web Developer. I am a fast learner and a team player
-                with excellent communication skills and a positive attitude.
-              </p>
-              <span className='text-green-800'>&lt;/p&gt;</span>
-            </div>
-            <span className='text-green-800 ml-8'>&lt;/div&gt;</span>
+          <div className='ml-8 flex flex-col justify-center'>
+            <span className='text-green-800'>&lt;p&gt;</span>
+            <p className='ml-4 not-italic text-gray-50 text-justify whitespace-pre-line'>
+              Dedicated and driven Frontend Web Developer with a passion for
+              creating beautiful, innovative, user-friendly and functional web
+              applications. Currently finishing my studies as a Software
+              Engineer and eager to embark on my first full-time role as a
+              Frontend Web Developer. I am a fast learner and a team player with
+              excellent communication skills and a positive attitude.
+            </p>
+            <span className='text-green-800'>&lt;/p&gt;</span>
           </div>
           <Links />
         </div>

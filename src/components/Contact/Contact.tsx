@@ -25,16 +25,14 @@ const Contact = () => {
             <p className='uppercase not-italic ml-12'>contact</p>
             <span className='text-green-800 ml-8'>&lt;/p&gt;</span>
           </div>
-          <div>
-            <span className='text-green-800 ml-8'>&lt;div&gt;</span>
-            {/* code */}
-            <span className='text-green-800 ml-8'>&lt;/div&gt;</span>
+          <div className='ml-8'>
+            <span className='text-green-800'>&lt;p&gt;</span>
+            <p className='ml-4'>valeksic1337@gmail.com</p>
+            <span className='text-green-800'>&lt;/p&gt;</span>
           </div>
           <Links />
         </div>
-        <div className='flex w-full justify-center items-center'>
-          <p>text</p>
-        </div>
+        <Form />
       </div>
     </motion.section>
   )
