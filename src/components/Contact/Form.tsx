@@ -1,6 +1,18 @@
+import { motion } from 'framer-motion'
+
 const Form = () => {
   return (
-    <form className='flex flex-col items-center justify-center gap-5 border-l-2 border-gray-700 bg-gray-900 p-10 rounded-xl not-italic text-base w-full'>
+    <motion.form
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: false, amount: 0.5 }}
+      transition={{ delay: 0.5, duration: 0.3 }}
+      variants={{
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      className='flex flex-col items-center justify-center gap-5 border-l-2 border-gray-700 bg-gray-900 p-10 rounded-xl not-italic text-base w-full'
+    >
       <div className='flex gap-5 w-full'>
         <div className='flex flex-col w-full'>
           <label htmlFor='firstname'>
@@ -62,7 +74,7 @@ const Form = () => {
       >
         Send Message
       </button>
-    </form>
+    </motion.form>
   )
 }
 

@@ -17,7 +17,7 @@ const AboutHobbies = ({ hobbies }: Props) => {
           whileInView='visible'
           viewport={{ once: false, amount: 'all' }}
           transition={{
-            delay: 0.1 + index * 0.1,
+            delay: 0.7 + index * 0.1,
             duration: 0.5,
             type: 'spring',
             bounce: 0.5,
