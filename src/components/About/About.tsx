@@ -115,8 +115,8 @@ const About = () => {
       }}
       className='h-screen flex items-center justify-center text-gray-300 font-semibold text-xl italic'
     >
-      <div className='flex gap-10 bg-gradient-to-br from-gray-900 to-gray-800 p-10 rounded-xl border-2 border-gray-700'>
-        <div className='flex flex-col gap-5 w-1/2'>
+      <div className='flex gap-10 bg-gradient-to-br from-gray-900 to-gray-800 p-10 rounded-xl border-2 border-gray-700 w-full'>
+        <div className='flex flex-col gap-5 w-full'>
           <div>
             <span className='text-green-800 ml-4'>&lt;section&gt;</span>
             <br />
@@ -126,25 +126,23 @@ const About = () => {
           </div>
           <div>
             <span className='text-green-800 ml-8'>&lt;div&gt;</span>
-            <div className='ml-8 flex gap-10'>
-              <div className='ml-4 flex flex-col justify-center'>
-                <span className='text-green-800'>&lt;p&gt;</span>
-                <p className='ml-4 not-italic text-gray-50 text-justify whitespace-pre-line'>
-                  Dedicated and driven Frontend Web Developer with a passion for
-                  creating beautiful, innovative, user-friendly and functional
-                  web applications. Currently finishing my studies as a Software
-                  Engineer and eager to embark on my first full-time role as a
-                  Frontend Web Developer. I am a fast learner and a team player
-                  with excellent communication skills and a positive attitude.
-                </p>
-                <span className='text-green-800'>&lt;/p&gt;</span>
-              </div>
+            <div className='ml-8 flex flex-col justify-center'>
+              <span className='text-green-800'>&lt;p&gt;</span>
+              <p className='ml-4 not-italic text-gray-50 text-justify whitespace-pre-line'>
+                Dedicated and driven Frontend Web Developer with a passion for
+                creating beautiful, innovative, user-friendly and functional web
+                applications. Currently finishing my studies as a Software
+                Engineer and eager to embark on my first full-time role as a
+                Frontend Web Developer. I am a fast learner and a team player
+                with excellent communication skills and a positive attitude.
+              </p>
+              <span className='text-green-800'>&lt;/p&gt;</span>
             </div>
             <span className='text-green-800 ml-8'>&lt;/div&gt;</span>
           </div>
           <Links />
         </div>
-        <div className='flex flex-col gap-5 w-1/2 justify-center'>
+        <div className='flex flex-col gap-5 w-full justify-center'>
           <div className='flex flex-col gap-5 border-l-2 border-gray-700 bg-gray-900 p-10 rounded-xl'>
             <p className='not-italic text-center'>Technologies</p>
             <AboutTech technologies={technologies} />
